@@ -31,15 +31,15 @@ class Time
         }
         void Sethours(int h)
         {
-            h = hours;
+            hours = h;
         }
         void Setmins(int m)
         {
-            m = mins;
+            mins = m;
         }
         void Setsec(int s)
         {
-            s = sec;
+            sec = s;
         }
         int Gethours()
         {
@@ -93,10 +93,11 @@ int main()
     Time t1 = Time(20,1,5);
     Time t2 = Time(1, 62, 5);
     Time t3 = Time();
-    t1.Printtime();
-    t2.Printtime();
-    t3 = t1.Addtime(t2);
-    t3.Printtime();
+    cout << t1.Gethours() << " , " << t1.Getmin() << " , " << t1.Getsec();
+    //t1.Printtime();
+    //t2.Printtime();
+    //t3 = t1.Addtime(t2);
+    //t3.Printtime();
 }
 
 
